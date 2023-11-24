@@ -85,6 +85,7 @@ ion-icon{
 }
 .footer ion-icon{
     margin-right: 50px;
+    transition: 1s ease;
 }
 
 .content-input-btton .input-dato:focus{
@@ -104,7 +105,9 @@ ion-icon:hover{
     background: var(--c-yellow);
     border-radius: 8px;
     color:var(--c-black);
+    
 }
 ion-icon , li,.header .inicio-sesion, button.btton-registro{
     cursor: pointer;
+    
 }
