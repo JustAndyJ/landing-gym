@@ -1,0 +1,110 @@
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --c-yellow:#FEC700;
+    --c-blackyellow:#edbb03;
+    --c-white:white;
+    --c-black:black;
+}
+
+body{
+    height: 100vh;
+    background-image: url(/lib/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--c-white);
+}
+
+.main .header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    align-items: center;
+}
+
+.header .homer-enlaces{
+    display: flex;
+    gap: 50px;
+}
+.homer-enlaces .textos-enlace{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.header .registro{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} 
+
+.main .content-logo-registro{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: 30px;
+}
+.content-logo-registro .content-input-btton{
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 9em;
+}
+.input-dato ,.btton-registro{
+    height: 40px;
+}
+.content-input-btton .input-dato{
+    outline: none;
+    border: none;
+    padding: 10px;
+    
+}
+.content-input-btton .btton-registro{
+    background:var(--c-yellow) ;
+    width: 10em;
+    border: none;
+    font-weight: 600;
+}
+footer.footer{
+    display: flex;
+    margin: 10px 30px;
+}
+
+ion-icon{
+    font-size: 2em;
+    margin-right: 10px;
+}
+.footer ion-icon{
+    margin-right: 50px;
+}
+
+.content-input-btton .input-dato:focus{
+    border-style: solid;
+    border-color: var(--c-yellow);
+    border-width: 4px;
+}
+button.btton-registro:hover{
+    background: var(--c-blackyellow);
+}
+
+.textos-enlace li:hover,
+.inicio-sesion:hover{
+    color: var(--c-yellow);
+}
+ion-icon:hover{
+    background: var(--c-yellow);
+    border-radius: 8px;
+    color:var(--c-black);
+}
+ion-icon , li,.header .inicio-sesion, button.btton-registro{
+    cursor: pointer;
+}
